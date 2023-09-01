@@ -3,7 +3,7 @@ data "terraform_remote_state" "domainmanager_networking" {
 
   config = {
     encrypt        = true
-    bucket         = "cisa-cool-terraform-state"
+    bucket         = "khulnasoft-cool-terraform-state"
     dynamodb_table = "terraform-state-lock"
     region         = "us-east-1"
     key            = "cool-domain-manager-networking/terraform.tfstate"
@@ -19,7 +19,7 @@ data "terraform_remote_state" "sharedservices_networking" {
 
   config = {
     encrypt        = true
-    bucket         = "cisa-cool-terraform-state"
+    bucket         = "khulnasoft-cool-terraform-state"
     dynamodb_table = "terraform-state-lock"
     region         = "us-east-1"
     key            = "cool-sharedservices-networking/terraform.tfstate"

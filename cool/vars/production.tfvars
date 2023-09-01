@@ -14,7 +14,7 @@ region = "us-east-1"
 #  EMAILS NOTIFICATIONS
 #=================================================
 ses_from                            = "domainmanager@khulnasoft.com"
-new_user_notification_email_address = "CISA.CSD.VM_Assessments_DomainManagement@cisa.dhs.gov"
+new_user_notification_email_address = "khulnasoft.CSD.VM_Assessments_DomainManagement@khulnasoft.com"
 
 #=================================================
 #  ROUTE 53

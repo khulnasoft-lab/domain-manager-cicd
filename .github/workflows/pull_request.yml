@@ -63,7 +63,7 @@ jobs:
             ${{ env.BASE_CACHE_KEY }}
       - name: Setup curl cache
         run: mkdir -p ${{ env.CURL_CACHE_DIR }}
-      - uses: hashicorp/setup-terraform@v1
+      - uses: hashicorp/setup-terraform@v2
         with:
           terraform_version: ${{ env.TERRAFORM_VERSION }}
       - name: Install dependencies

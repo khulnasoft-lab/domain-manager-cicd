@@ -79,7 +79,7 @@ jobs:
         repo: [domain-manager-api, domain-manager]
     steps:
       # Checkout repo to build against
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           repository: khulnasoft-lab/${{ matrix.repo }}
 
@@ -170,13 +170,13 @@ jobs:
 
     steps:
       # Checkout this repository
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           repository: khulnasoft-lab/domain-manager-cicd
           path: domain-manager-cicd
 
       # Checkout domain-manager api repo
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           repository: khulnasoft-lab/domain-manager-api
           path: domain-manager-api

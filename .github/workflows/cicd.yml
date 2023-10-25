@@ -30,7 +30,7 @@ jobs:
     outputs:
       tag: ${{ steps.vars.outputs.tag }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           repository: khulnasoft-lab/domain-manager-ui
       - name: Get Tag
@@ -58,7 +58,7 @@ jobs:
     outputs:
       tag: ${{ steps.vars.outputs.tag }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           repository: khulnasoft-lab/domain-manager-api
       - name: Get Tag
@@ -85,13 +85,13 @@ jobs:
 
     steps:
       # Checkout api for building lambda function
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           repository: khulnasoft-lab/domain-manager-api
           path: domain-manager-api
 
       # Checkout cicd repo for running terraform
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           path: domain-manager-cicd
 

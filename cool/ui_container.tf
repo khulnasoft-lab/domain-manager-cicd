@@ -25,7 +25,7 @@ resource "aws_cloudwatch_log_group" "ui" {
 # CONTAINER DEFINITION
 # ===========================
 module "ui_container" {
-  source          = "git::https://github.com/cloudposse/terraform-aws-ecs-container-definition.git?ref=tags/0.47.0"
+  source          = "git::https://github.com/cloudposse/terraform-aws-ecs-container-definition.git?ref=0.61.1"
   container_name  = local.ui_container_name
   container_image = "${var.account_id}.dkr.ecr.${var.region}.amazonaws.com/${var.ui_image_repo}:${var.ui_image_tag}"
   essential       = "true"

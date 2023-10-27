@@ -66,7 +66,7 @@ resource "aws_cloudwatch_log_group" "api" {
 # CONTAINER DEFINITION
 # ===========================
 module "api_container" {
-  source          = "git::https://github.com/cloudposse/terraform-aws-ecs-container-definition.git?ref=tags/0.47.0"
+  source          = "git::https://github.com/cloudposse/terraform-aws-ecs-container-definition.git?ref=0.61.1"
   container_name  = local.api_container_name
   container_image = "${var.account_id}.dkr.ecr.${var.region}.amazonaws.com/${var.api_image_repo}:${var.api_image_tag}"
   essential       = "true"

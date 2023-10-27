@@ -128,7 +128,7 @@ jobs:
 
       # Assume role to push images to ECR
       - name: Assume provision account role
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-region: ${{ env.REGION }}
           role-duration-seconds: 1200

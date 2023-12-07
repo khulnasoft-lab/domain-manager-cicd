@@ -199,7 +199,7 @@ jobs:
           echo "api_tag=$(cat artifacts/domain-manager-api/tag.txt)" >> $GITHUB_ENV
 
       # Install python 3.8 for installing lambda layer
-      - uses: actions/setup-python@v2
+      - uses: actions/setup-python@v5
         with:
           python-version: 3.8
       - name: Upgrade Pip

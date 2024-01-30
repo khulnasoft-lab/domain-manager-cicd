@@ -32,7 +32,7 @@ resource "aws_ssm_parameter" "docdb_password" {
 # DOCUMENT DB
 # ===========================
 module "docdb" {
-  source                  = "git::https://github.com/cloudposse/terraform-aws-documentdb-cluster.git?ref=tags/0.13.0"
+  source                  = "git::https://github.com/cloudposse/terraform-aws-documentdb-cluster.git?ref=0.25.0"
   stage                   = var.env
   namespace               = var.app
   name                    = "docdb4"
